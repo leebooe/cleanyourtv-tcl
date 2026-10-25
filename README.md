@@ -409,6 +409,7 @@ tools/theme.sh themes/aurora                                 # push a theme; --r
 | [`tools/screendiff.py`](tools/screendiff.py) | Compares a before and an after screenshot pixel by pixel, leaving out the clock or anything you mask, and writes the pair with your Wi-Fi name blurred. Optional, like the trace tools. [Guide](tools/screendiff.md). |
 | [`tools/race_calendar.py`](tools/race_calendar.py) | Writes this season's F1 calendar into a theme for race-weekend mode, from the free Jolpica API. |
 | [`launcher/build-and-install.sh`](launcher/build-and-install.sh) | Builds a shrunk release (about 474 KB), installs it, switches Home, and rolls back if Home does not land on it. |
+| [`tools/tcl-install.py`](tools/tcl-install.py) | Installs the separate application preview through TCL MultiScreenInteraction; keeps the current Home. See [TCL preview](docs/tcl-preview.md). |
 
 The scripts never leave the TV without a Home app: they only disable a stock launcher they recognise,
 and skip the Home app in a list until another launcher answers HOME. Details below.

@@ -84,7 +84,7 @@
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.HOME" />
+                <category android:name="${entryCategory}" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <!-- Listed in the TV's own app list, so it can be opened from the stock home screen too. -->

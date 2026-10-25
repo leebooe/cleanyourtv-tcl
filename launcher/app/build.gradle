@@ -13,6 +13,7 @@ android {
         targetSdk 34
         versionCode 7
         versionName '2.6'
+        manifestPlaceholders = [entryCategory: 'android.intent.category.HOME']
     }
 
     buildTypes {
@@ -23,6 +24,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             // Sideloaded over ADB, never published: sign with the debug key so it installs over a debug build.
             signingConfig signingConfigs.debug
+        }
+        // Ordinary app entry for trying the UI alongside the TV's current Home.
+        preview {
+            initWith release
+            applicationIdSuffix '.preview'
+            manifestPlaceholders = [entryCategory: 'android.intent.category.LAUNCHER']
+            matchingFallbacks = ['release']
         }
     }
 

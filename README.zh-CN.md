@@ -175,6 +175,7 @@ PowerShell 安装脚本使用 `-StockLauncher <包名>` 指定原始桌面，或
 | [`tools/recovery.py`](tools/recovery.py) | 保存恢复记录并生成恢复命令。 |
 | [`tools/theme.sh`](tools/theme.sh) | 推送或重置主题，并重新启动桌面。 |
 | [`launcher/build-and-install.sh`](launcher/build-and-install.sh) | 编译、安装桌面并切换 HOME。 |
+| [`tools/tcl-install.py`](tools/tcl-install.py) | 通过 TCL 多屏互动安装独立应用预览版，保留当前默认桌面。见[预览安装说明](docs/tcl-preview.md)。 |
 
 ## 更多配置
 
